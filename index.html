@@ -9,17 +9,71 @@
 </head>
 <body>
     <div class="container mt-5">
-        <div class="header">
-            <h1>5 Day Forecast</h1>
-        </div>
-        <div class="content">
-            <div class="input-container">
-                <label for="locationInput">Enter Location:</label>
+        <header>
+            <h1>Wild Weather App!</h1>
+        </header>
+        <sidebar class="content">
+            <form class="input-container">
+                <label for="locationInput">Search for a City:</label>
                 <input type="text" id="locationInput" class="form-control mb-3" placeholder="Minneapolis">
                 <button class="btn btn-primary">Get Forecast</button>
+            </form>
+        </sidebar>
+        <article id="forecastContainer" class="forecast mt-3">
+            <div class="row">
+                <h2>5-Day Forecast:</h2>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="date1">Date</h5>
+                            <p class="card-text" id="tempDay1">Temp: </p>
+                            <p class="card-text" id="windDay1">Wind: </p>
+                            <p class="card-text" id="humidityDay1">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="date2">Date</h5>
+                            <p class="card-text" id="tempDay2">Temp: </p>
+                            <p class="card-text" id="windDay2">Wind: </p>
+                            <p class="card-text" id="humidityDay2">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="date3">Date</h5>
+                            <p class="card-text" id="tempDay3">Temp: </p>
+                            <p class="card-text" id="windDay3">Wind: </p>
+                            <p class="card-text" id="humidityDay3">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="date4">Date</h5>
+                            <p class="card-text" id="tempDay4">Temp: </p>
+                            <p class="card-text" id="windDay4">Wind: </p>
+                            <p class="card-text" id="humidityDay4">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="date5">Date</h5>
+                            <p class="card-text" id="tempDay5">Temp: </p>
+                            <p class="card-text" id="windDay5">Wind: </p>
+                            <p class="card-text" id="humidityDay5">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="forecastContainer" class="forecast mt-3"></div>
-        </div>
+        </article>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/dayjs.min.js" integrity="sha512-FwNWaxyfy2XlEINoSnZh1JQ5TRRtGow0D6XcmAWmYCRgvqOUTnzCxPc9uF35u5ZEpirk1uhlPVA19tflhvnW1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/script.js"></script>
